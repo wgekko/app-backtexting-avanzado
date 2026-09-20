@@ -1,0 +1,160 @@
+@import url("https://use.typekit.net/ers2qgl.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: #000000;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+#pre-load {
+    background: #000;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Espacio vertical entre la animación y el menú */
+    z-index: 999999;
+}
+
+/* --- ANIMACIÓN TRADE STOCK --- */
+#pre-load .loader-inner {
+    --loader-background: linear-gradient(0deg, rgba(50, 50, 50, .2) 0%, rgba(100, 100, 100, .2) 100%);
+    position: relative;
+    width: 340px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pre-load .loader-inner .loader-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: color-change 2s infinite ease-in-out;
+    z-index: 999;
+}
+
+#pre-load .loader-inner .loader-logo .logo-text {
+    color: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+#pre-load .loader-inner .box {
+    position: absolute;
+    background: var(--loader-background);
+    border-radius: 8px;
+    border-top: 1px solid rgb(100, 100, 100);
+    box-shadow: rgba(0, 0, 0, .3) 0 10px 10px 0;
+    backdrop-filter: blur(5px);
+    animation: ripple 2s infinite ease-in-out;
+}
+
+#pre-load .loader-inner .box:nth-child(1) { inset: 38px 65px; z-index: 99; }
+#pre-load .loader-inner .box:nth-child(2) { inset: 28px 48px; z-index: 98; border-color: rgba(100, 100, 100, .8); animation-delay: .2s; }
+#pre-load .loader-inner .box:nth-child(3) { inset: 18px 32px; z-index: 97; border-color: rgba(100, 100, 100, .6); animation-delay: .4s; }
+#pre-load .loader-inner .box:nth-child(4) { inset: 9px 16px;  z-index: 96; border-color: rgba(100, 100, 100, .4); animation-delay: .6s; }
+#pre-load .loader-inner .box:nth-child(5) { inset: 0;         z-index: 95; border-color: rgba(100, 100, 100, .2); animation-delay: .8s; }
+
+
+
+/* --- BARRA DE NAVEGACIÓN HORIZONTAL --- */
+nav {
+    display: flex;
+    flex-direction: row; /* Cambio a disposición horizontal */
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    clip-path: inset(0 50% 0 50%); /* Inicio oculto desde el centro para el despliegue */
+    opacity: 0;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "ff-chambers-sans-web", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem; /* Tamaño optimizado para la fila horizontal */
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 0.8rem;
+    padding: 0.5rem 1rem;
+}
+
+nav a span {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+nav a svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: skew(-30deg);
+    transition: box-shadow 25ms 25ms;
+}
+
+nav a svg rect {
+    shape-rendering: crispEdges;
+    z-index: 0;
+}
+
+nav a svg .blue rect {
+    fill: #05eafa;
+    mix-blend-mode: color-dodge;
+}
+
+nav a svg .pink rect {
+    fill: #ff6bd3;
+}
+
+nav a.active svg {
+    box-shadow: 0 0 25px 2px #0763f7;
+}
+
+/* --- KEYFRAMES --- */
+@keyframes ripple {
+    0% { transform: scale(1); box-shadow: rgba(0, 0, 0, .3) 0 10px 10px 0; }
+    50% { transform: scale(1.12); box-shadow: rgba(0, 0, 0, .3) 0 20px 15px 0; }
+    100% { transform: scale(1); box-shadow: rgba(0, 0, 0, .3) 0 10px 10px 0; }
+}
+
+@keyframes color-change {
+    0% { opacity: .7; }
+    50% { opacity: 1; }
+    100% { opacity: .7; }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    nav a {
+        font-size: 1rem;
+        margin: 0.3rem;
+    }
+}
+
+

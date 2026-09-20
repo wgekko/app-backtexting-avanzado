@@ -1,0 +1,157 @@
+[theme]
+
+# ============================================================
+# TEMA GENERAL
+# ============================================================
+
+base = "dark"
+
+primaryColor = "#00FF41"
+
+backgroundColor = "#050A06"
+
+secondaryBackgroundColor = "#0B120D"
+
+codeBackgroundColor = "#020503"
+
+#textColor = "#E8FFE8"
+textColor = "#00FF41"
+
+linkColor = "#00FF41"
+
+borderColor = "#1B4D2A"
+
+codeTextColor = "#00FF41"
+
+showWidgetBorder = true
+
+showSidebarBorder = true
+
+
+# ============================================================
+# BORDES
+# ============================================================
+
+baseRadius = "6px"
+
+buttonRadius = "6px"
+
+
+# ============================================================
+# TIPOGRAFÍA
+# ============================================================
+
+font = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+
+headingFont = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap"
+
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+
+baseFontSize = 15
+
+baseFontWeight = 400
+
+codeFontSize = "13px"
+
+headingFontSizes = [
+    "28px",
+    "22px",
+    "18px",
+    "16px",
+    "14px",
+    "12px"
+]
+
+headingFontWeights = [
+    700,
+    600,
+    600,
+    600,
+    500,
+    500
+]
+
+linkUnderline = false
+
+
+# ============================================================
+# COLORES SEMÁNTICOS
+# ============================================================
+
+greenColor = "#00FF41"
+
+redColor = "#FF4B4B"
+
+yellowColor = "#FFD600"
+
+orangeColor = "#FF8C00"
+
+blueColor = "#00BFFF"
+
+violetColor = "#9D7CFF"
+
+grayColor = "#8FAF96"
+
+
+# ============================================================
+# COLORES DE GRÁFICOS
+# ============================================================
+
+chartCategoricalColors = [
+    "#00FF41",
+    "#00C853",
+    "#00E676",
+    "#1DE9B6",
+    "#00BFA5",
+    "#64DD17",
+    "#76FF03",
+    "#A7FFEB"
+]
+
+
+# ============================================================
+# IMPORTANTE:
+# STREAMLIT REQUIERE 10 COLORES
+# ============================================================
+
+chartSequentialColors = [
+    "#E8FFE8",
+    "#B9FFC4",
+    "#7CFF8A",
+    "#3DFF5A",
+    "#00FF41",
+    "#00E638",
+    "#00C853",
+    "#009624",
+    "#006B1B",
+    "#003D10"
+]
+
+
+# ============================================================
+# DATAFRAME
+# ============================================================
+
+dataframeBorderColor = "#1B4D2A"
+
+dataframeHeaderBackgroundColor = "#0F1F13"
+
+
+# ============================================================
+# SIDEBAR
+# ============================================================
+
+[theme.sidebar]
+
+backgroundColor = "#070E09"
+
+secondaryBackgroundColor = "#0D1A11"
+
+codeBackgroundColor = "#020503"
+
+#textColor = "#E8FFE8"
+textColor = "#00FF41"
+
+borderColor = "#1B4D2A"
+
+primaryColor = "#00FF41"
