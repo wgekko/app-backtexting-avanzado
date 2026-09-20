@@ -1,8 +1,8 @@
-# 📈 Quant-Backtesting & ML Engine
+# Quant-Backtesting & ML Engine
 
 Una plataforma integral desarrollada en Python y Streamlit para el diseño, simulación y optimización de estrategias de trading algorítmico. Esta herramienta combina el rigor del backtesting *Event-Driven* con modelos predictivos de Machine Learning, enfocándose en la eficiencia computacional y la prevención del sobreajuste (*overfitting*).
 
-## 🚀 Arquitectura y Características Principales
+## Arquitectura y Características Principales
 
 * **Motor de Backtesting Híbrido:** Simulación realista que incorpora fricciones de mercado (comisiones, cash management) y un análisis exhaustivo de métricas ajustadas por riesgo (Sharpe, Sortino, Max Drawdown, Calmar Proxy).
 * **Optimización de Hiperparámetros (HPO) de Bajo Costo:** Integración de la librería `FLAML` utilizando el algoritmo **CFO** (*Cost-Frugal Optimization*) para encontrar combinaciones óptimas de indicadores técnicos (SMA, RSI, MACD, Estocástico, Bollinger Bands) bajo restricciones estrictas de tiempo.
@@ -23,5 +23,11 @@ Una plataforma integral desarrollada en Python y Streamlit para el diseño, simu
 
 1. Clona el repositorio:
    ```bash
-   git clone [https://github.com/tu-usuario/tu-repo.git](https://github.com/tu-usuario/tu-repo.git)
-   cd tu-repo
+   git clone https://github.com/wgekko/app-backtexting-avanzado.git
+   cd app-backtexting-avanzado
+
+Video Demo 
+
+
+
+ 
