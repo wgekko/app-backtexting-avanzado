@@ -10,7 +10,7 @@ Una plataforma integral desarrollada en Python y Streamlit para el diseño, simu
 * **Prevención de Data Leakage:** Pipeline de evaluación robusto que utiliza **Walk-Forward Validation** para las estrategias de cruce y `TimeSeriesSplit` para el entrenamiento de los ensambles de Machine Learning (LightGBM, XGBoost, Random Forest), garantizando una validación *Out-of-Sample* (OOS) estadísticamente válida.
 * **Interfaz Reactiva y Modular:** Diseño de UI mediante Streamlit con un manejo avanzado del estado (`st.session_state`), lo que permite persistir los cálculos pesados en memoria, separar la lógica de negocio de la capa de presentación y renderizar gráficos interactivos de alta fidelidad (Plotly y Bokeh) sin recálculos innecesarios.
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 * **Lenguaje:** Python 3.9+
 * **Frontend / Framework:** Streamlit
@@ -19,7 +19,10 @@ Una plataforma integral desarrollada en Python y Streamlit para el diseño, simu
 * **Machine Learning & Estadística:** `scikit-learn`, `FLAML` (AutoML), `statsmodels`
 * **Visualización:** `Plotly`, `Bokeh`
 
-## ⚙️ Instalación y Configuración
+si desean mantener la misma configuración del demo, dejo una carpeta streamlit con un archivo config.toml 
+que deben crear una carpeta .streamlit y colocarlo alli para que se condigure la app igual que el video demo
+
+## Instalación y Configuración
 
 1. Clona el repositorio:
    ```bash
@@ -27,8 +30,6 @@ Una plataforma integral desarrollada en Python y Streamlit para el diseño, simu
    cd app-backtexting-avanzado
 
 Video Demo 
-
-
 
 https://github.com/user-attachments/assets/caac6b0e-2fcc-41f7-8f8c-287e67ebb186
 
